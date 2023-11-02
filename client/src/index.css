@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* shadow for login and signup */
+:root {
+  --accent-color:	#ff085a;
+  --primary-color: #000000;
+  --secondary-color: #1c2541;
+  --special-color:#3e505b;
+  --text-primary-color: black;
+  --text-secondary-color: #828282;
+
+}
+
+.mix-bg{
+  background-image: linear-gradient(to right, #81edf3, #90f0f5, #9ff3f8, #acf5fa, #b9f8fc, #c0f8fe, #c8f7ff, #cff7ff, #d4f4ff, #e0f0ff, #f0ebff, #ffe6ff);
+
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+/* CSS for right-aligned messages (sent by current user) */
+.right-message {
+  background-color: black; /* Change to your desired background color for right messages */
+  color: white; /* Text color for right messages */
+  border-radius: 10px 10px  0 10px ; /* Rounded corners for the message box */
+  margin-left: auto; /* Push the message to the right */
+  max-width: 70%; /* Adjust as needed */
+}
+
+/* CSS for left-aligned messages (sent by other users) */
+.left-message {
+  background-color: #f0f0f0; /* Change to your desired background color for left messages */
+  color: #333; /* Text color for left messages */
+  border-radius: 10px 10px 10px 0; /* Rounded corners for the message box */
+  margin-right: auto; /* Push the message to the left */
+  max-width: 70%; /* Adjust as needed */
+}
+
+/* For WebKit-based browsers */
+::-webkit-scrollbar {
+  width: 8px;
+  cursor: pointer;
+}
+
+/* For WebKit-based browsers */
+::-webkit-scrollbar-thumb {
+  background: white; 
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* For WebKit-based browsers */
+::-webkit-scrollbar-track {
+  background: var(--special-color); 
+}
+
+
+.shadow {
+  box-shadow: rgba(182, 215, 226, 0.778) 0px 4px 12px;
+}
+
+.input-user-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.labelImg {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.userImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
